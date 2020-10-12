@@ -1,3 +1,12 @@
+:root{
+  --main-bg-color: #264653;
+  --secondary-bg-color: #2a9d8f;
+  --main-text-color: #e76f51;
+  --secondary-text-color: #e9c46a;
+  --mouse-hover-color: #f4a261;
+}
+
+
 .nav-link:link {
   color: black;
 }
@@ -27,7 +36,7 @@ nav{
   position: fixed;
   display: flex;
   flex-direction: row-reverse;
-  background-color: #c70039;
+  background-color: var(--secondary-bg-color);
 }
 
 nav ul li{
@@ -52,24 +61,24 @@ nav ul li:hover{
   display:flex;
   align-items: center;
   justify-content:center;
-  background-color: #581845;
+  background-color: var(--main-bg-color);
   height: 100vh;
   text-align: center;
 }
 
 .me-info h1{
-  color: #ff5733;
+  color: var(--main-text-color);
   font-size: 70px;
 }
 .me-info h2{
-  color: #c70039;
+  color: var(--secondary-text-color);
 }
 
 #projects{
   min-height: 100vh;
   width: 100%;
   padding-top: 40px;
-  background-color: #900c3f;
+  background-color: var(--main-text-color);
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -118,7 +127,7 @@ nav ul li:hover{
 }
 
 #profile-link:hover{
-  background-color: #f4a261;
+  background-color: var(--secondary-bg-color);
   border-color: #e76f51;
   border-radius: 150%;
 }
