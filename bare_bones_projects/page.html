@@ -1,0 +1,309 @@
+<div id="bg-img-div">
+  <img id="background-img" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Gerichtskampf_mair.jpg">
+  </img>
+</div>
+
+<header id="header">
+  <div id="header-banner">
+    <img class="header-elem" id="header-img" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.onlinewebfonts.com%2Fsvg%2Fimg_571057.png&f=1&nofb=1" alt="two crossed swords logo">
+    <style media="screen">
+      :root{
+    /*needs to change with media query - checked*/
+  --header-height: 75px;
+}
+
+#bg-img-div{
+  position: relative;
+  z-index: -1;
+}
+
+#background-img {
+  position: fixed;
+  width: 99%;
+  filter: blur(2px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header{
+  background-color: rgba(156, 172, 197, 1);
+  display:flex;
+  /*needs to change to columns with media query*/
+  flex-direction: row;
+  padding-top: 0;
+  width: 100%;
+  height: var(--header-height);
+  border-radius: 5px;
+  justify-content: flex-start;
+  position: fixed;
+  top: 0%;
+}
+
+.header-elem{
+  margin-left: 20px;
+/*   margin-right: 20px; */
+}
+
+#header-banner{
+  display:flex;
+  /*needs to change with screen size- check*/
+  flex-dierction: row;
+  width: 50%;
+}
+
+#nav-bar {
+  display:flex;
+  /*needs to change with screen size- check*/
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+#header-img{
+  display:flex;
+  height: 50%;
+  width: auto;
+  align-self: center;
+}
+
+#comp-name{
+  align-self: center;
+  font-size: 30px;
+}
+
+.nav-link{
+  display:flex;
+  align-self: center;
+  font-size: 20px;
+}
+
+.nav-link:link {
+  color: black;
+}
+
+.nav-link:visited{
+  color: black;
+}
+
+main {
+  background-color: rgba(156, 172, 197, 0.6);
+  border-radius: 5px;
+  width: 100%;
+  margin-top: var(--header-height);
+  padding-top: 20px;
+  padding-bottom: 50px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+#form-section{
+  text-align: center;
+}
+
+
+#email{
+  /*needs to change with media query - check*/
+  width: 50%;
+  text-size: 20px;
+  margin-top: 10px;
+  align-self: center;
+  display: flex;
+  text-align: center;
+}
+
+#form{
+  width: 50%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#submit{
+  width: 30%;
+  text-size: 20px;
+  margin-top: 10px;
+  margin-left: 0px;
+  padding-left: 0px;
+  align-self: center;
+  text-align: center;
+  display: flex;
+}
+
+
+.why-us-elem{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-self: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+.why-elem-img {
+  display: flex;
+  height: 100px;
+  width: auto;
+  margin-right: 20px;
+}
+
+.why-elem-text{
+  font-size: 25px;
+}
+
+#video{
+  display:flex;
+  align-self: center;
+}
+
+/* needs to change to columns with media query - check */
+#products{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.product{
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /*needs to change with media query - check*/
+  width: 25%;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 5px;
+  padding: 5px 5px 5px 5px;
+  border-color: rgba(191, 200, 217, 0.5);
+  text-align: center;
+  margin: 10px 10px 10px 10px;
+}
+
+.prod-img{
+  display: flex;
+  align-self: center;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.prod-desc .prod-price{
+  font-size: 20px;
+}
+
+@media (max-width: 700px){
+  :root{
+    --header-height: 100px;
+  }
+
+  #products{
+    flex-direction: column;
+  }
+  .product{
+    width: 90%;
+  }
+  #email{
+    width: 80%;
+  }
+  #submit{
+    width: 60%;
+  }
+
+  #video{
+    width: 100%;
+    height: 315px;
+  }
+
+  #header-img{
+    width: 30%;
+    height: auto;
+    align-self: center;
+  }
+  #comp-name{
+    width: 50%;
+    align-self: center;
+  }
+
+  .nav-link{
+    font-size: 15px;
+  }
+
+  #nav-bar{
+    flex-direction: column;
+  }
+
+}
+    </style>
+  <p class="header-elem" id="comp-name">
+    Orewood Armory
+  </p>
+  </div>
+  <nav class="header-elem" id="nav-bar">
+    <a class="nav-link"  href="#why-us">Why Us? </a>
+    <a class="nav-link"  href="#video" >Usage </a>
+    <a class="nav-link"  href="#products">Products </a>
+  </nav>
+</header>
+<br>
+<main>
+  <section id="form-section">
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input id="email" type="email" name="email" placeholder="Type in your email" required="">
+      <input id="submit" type="submit" value="Submit"></p>
+    </form>
+  </section>
+
+  <section id="why-us">
+    <div class="why-us-elem">
+      <img alt="metal ingot" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.freeiconspng.com%2Fuploads%2Faluminum-ingots-metal-photos-22.png&f=1&nofb=1" class="why-elem-img">
+      <h2 class="why-elem-text"> We use highest quality steel to ensure the longevity of our products! </h2>
+      </div>
+    <div class="why-us-elem">
+      <img alt="delivery chariot" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fclipart.coolclips.com%2F480%2Fvectors%2Ftf05260%2FCoolClips_vc044588.png&f=1&nofb=1" class="why-elem-img">
+      <h2 class="why-elem-text"> Our delivery is as fast as Hermes himself! </h2>
+      </div>
+    <div class="why-us-elem">
+      <img alt="manual book" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Ff%2Ff4%2FBook_designed_by_Benny_Forsberg_from_the_Noun_Project_-_with_lines.png&f=1&nofb=1" class="why-elem-img">
+      <h2 class="why-elem-text"> Each and every one of our products has a respectable manual! </h2>
+      </div>
+  </section>
+  <section id="video-elem">
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/jdjCNYG5aM0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
+  <section id="products">
+    <div class="product">
+      <img class="prod-img" alt="longsword" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fb5%2F91%2Fcb%2Fb591cb46298df51239d3fcda3bc2ec09.jpg&f=1&nofb=1">
+      <p class="prod-desc">
+        Longsword - Best for carrying around the town - for instant defese. Shows status!
+      </p>
+      <p class="prod-price"> 200 Gold </p>
+      <button class="prod-btn">Select</button>
+    </div>
+    <div class="product">
+      <img class="prod-img" alt="spear" src="http://vignette1.wikia.nocookie.net/olympians/images/a/a5/3-Greek-Spear.jpg/revision/latest?cb=20120823041742">
+      <p class="prod-desc">
+        Spear - has a long reach and not too many sharp edges. Can easily arm an army!
+      </p>
+      <p class="prod-price"> 20 Gold </p>
+      <button class="prod-btn">Select</button>
+    </div>
+    <div class="product">
+      <img class="prod-img" alt="warhammer" src="http://p0.ipstatp.com/large/005a3014944c80a3798b">
+      <p class="prod-desc">
+        Warhammer - looks humble and respectable, until it crushes the armors of your foes!
+      </p>
+      <p class="prod-price"> 100 Gold </p>
+      <button class="prod-btn">Select</button>
+    </div>
+  </section>
+</main>
